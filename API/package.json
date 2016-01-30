@@ -1,0 +1,32 @@
+{
+  "name": "diary",
+  "version": "1.0.0",
+  "description": "Server side for the Diary app",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "monitor": "nodemon app.js",
+    "deploy": "gcloud preview app deploy app.yaml",
+    "lint": "jshint --exclude-path=.gitignore .",
+    "test": "npm run lint"
+  },
+  "author": "HackCambridge",
+  "contributors": [
+    {
+      "name": "Marti Serra",
+      "email": "zcabmse@ucl.ac.uk"
+    },
+    {
+      "name": "Sadir",
+      "email": "jbsimon@google.com"
+    }
+  ],
+  "license": "Apache Version 2.0",
+  "dependencies": {
+    "express": "^4.13.3",
+    "havenondemand": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=0.12.7"
+  }
+}
