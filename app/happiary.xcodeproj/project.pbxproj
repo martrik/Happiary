@@ -14,6 +14,9 @@
 		0B975C9E1C5D23A700899617 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B975C9C1C5D23A700899617 /* LaunchScreen.xib */; };
 		0B975CAA1C5D23A700899617 /* happiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B975CA91C5D23A700899617 /* happiaryTests.swift */; };
 		0B975CB41C5D24A600899617 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B975CB31C5D24A600899617 /* EntryViewController.swift */; };
+		0B975CB61C5D666400899617 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B975CB51C5D666400899617 /* logo.png */; };
+		0B975CB81C5D66DC00899617 /* real logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B975CB71C5D66DC00899617 /* real logo.png */; };
+		0B975CBA1C5D67B300899617 /* logo_beltoul.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B975CB91C5D67B300899617 /* logo_beltoul.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		0B975CA81C5D23A700899617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B975CA91C5D23A700899617 /* happiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = happiaryTests.swift; sourceTree = "<group>"; };
 		0B975CB31C5D24A600899617 /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		0B975CB51C5D666400899617 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../logo.png; sourceTree = "<group>"; };
+		0B975CB71C5D66DC00899617 /* real logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "real logo.png"; path = "../../../real logo.png"; sourceTree = "<group>"; };
+		0B975CB91C5D67B300899617 /* logo_beltoul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_beltoul.png; path = ../../../logo_beltoul.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				0B975C921C5D23A700899617 /* Info.plist */,
+				0B975CB71C5D66DC00899617 /* real logo.png */,
+				0B975CB91C5D67B300899617 /* logo_beltoul.png */,
+				0B975CB51C5D666400899617 /* logo.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -195,7 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B975CBA1C5D67B300899617 /* logo_beltoul.png in Resources */,
 				0B975C991C5D23A700899617 /* Main.storyboard in Resources */,
+				0B975CB81C5D66DC00899617 /* real logo.png in Resources */,
+				0B975CB61C5D666400899617 /* logo.png in Resources */,
 				0B975C9E1C5D23A700899617 /* LaunchScreen.xib in Resources */,
 				0B975C9B1C5D23A700899617 /* Images.xcassets in Resources */,
 			);
@@ -415,6 +427,7 @@
 				0B975CAF1C5D23A700899617 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B975CB01C5D23A700899617 /* Build configuration list for PBXNativeTarget "happiaryTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +436,7 @@
 				0B975CB21C5D23A700899617 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

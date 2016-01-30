@@ -66,7 +66,7 @@
                         <color key="backgroundColor" red="1" green="0.81682146542827649" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="i5U-F2-vq4">
+                    <navigationItem key="navigationItem" title="Entry" id="i5U-F2-vq4">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="ZbC-hG-0fa"/>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -93,28 +93,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4TV-XL-t72" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-62" y="348"/>
-        </scene>
-        <!--Your happimental history-->
-        <scene sceneID="cb7-tQ-SSo">
-            <objects>
-                <viewController id="gcP-Da-ic9" customClass="ViewController" customModule="happiary" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eax-Nt-xfD"/>
-                        <viewControllerLayoutGuide type="bottom" id="2UT-Vl-K03"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3z9-m8-9hJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.8168214654" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Your happimental history" id="KXj-SC-9Ra">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="hwv-eA-DhH"/>
-                    </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cDH-Yq-4UQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="435" y="687"/>
         </scene>
     </scenes>
 </document>
