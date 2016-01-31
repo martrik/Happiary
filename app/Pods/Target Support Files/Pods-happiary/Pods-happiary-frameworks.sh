@@ -85,11 +85,15 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-happiary/Alamofire.framework"
+  install_framework "Pods-happiary/Auk.framework"
   install_framework "Pods-happiary/EZLoadingActivity.framework"
   install_framework "Pods-happiary/SwiftyJSON.framework"
+  install_framework "Pods-happiary/moa.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-happiary/Alamofire.framework"
+  install_framework "Pods-happiary/Auk.framework"
   install_framework "Pods-happiary/EZLoadingActivity.framework"
   install_framework "Pods-happiary/SwiftyJSON.framework"
+  install_framework "Pods-happiary/moa.framework"
 fi

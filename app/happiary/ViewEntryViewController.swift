@@ -7,17 +7,25 @@
 //
 
 import UIKit
+import Auk
 
 class ViewEntryViewController: UIViewController {
     
     var entry = Entry()
     
+    @IBOutlet weak var happinnessLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var entryText: UITextView!
     @IBOutlet weak var backgroundImage: UIImageView!
 
+    @IBOutlet weak var imageHeightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var slideShow: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.automaticallyAdjustsScrollViewInsets = false
         
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = .MediumStyle
@@ -26,11 +34,21 @@ class ViewEntryViewController: UIViewController {
         dateLabel.text = "Date: " + string
         entryText.text = entry.text
                 
-        self.backgroundImage.contentMode = .ScaleAspectFit
+        //self.backgroundImage.contentMode = .Center
         downloadImage(NSURL(string: self.entry.backgroundImage)!, imageView: self.backgroundImage)
         
-
+        for (var i = 0; i<self.entry.faceImage.count; i++) {
+            self.slideShow.auk.show(url: self.entry.faceImage[i])
+        }
+        
+        let score = round(entry.score*100)/100
+        if (score > 0) {
+            self.happinnessLabel.text = "Hapiness score: " + String(score)
+        } else {
+            self.happinnessLabel.text = "Sadness score: " + String(score)
+        }
     }
+
     
     func downloadImage(url: NSURL, imageView: UIImageView){
         print("Download Started")
@@ -40,7 +58,16 @@ class ViewEntryViewController: UIViewController {
                 guard let data = data where error == nil else { return }
                 print(response?.suggestedFilename ?? "")
                 print("Download Finished")
-                imageView.image = UIImage(data: data)
+                let image = UIImage(data: data)
+                let width = image!.size.width
+                let height = image!.size.height;
+                let apect = width/height;
+                
+                let nHeight = imageView.frame.size.width/apect;
+                self.imageHeightConstraint.constant = nHeight;
+                [self ]
+                imageView.image = image
+                
             }
         }
     }

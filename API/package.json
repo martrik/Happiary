@@ -25,7 +25,8 @@
   "dependencies": {
     "express": "^4.13.3",
     "havenondemand": "^1.1.0",
-    "body-parser": "^1.0"
+    "body-parser": "^1.0",
+    "google-search": "^0.0"
   },
   "engines": {
     "node": ">=0.12.7"

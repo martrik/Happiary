@@ -24,7 +24,7 @@ class Entry : NSObject, NSCopying {
     var score : Double
     var text : String
     var backgroundImage : String
-    var faceImage : String
+    var faceImage : Array<String>
     var shirtText : String
     
     required override init() {
@@ -32,7 +32,7 @@ class Entry : NSObject, NSCopying {
         self.score = 0.0
         self.text = ""
         self.backgroundImage = ""
-        self.faceImage = ""
+        self.faceImage = Array<String>()
         self.shirtText = ""
     }
     
@@ -42,7 +42,7 @@ class Entry : NSObject, NSCopying {
         theCopy.score = self.score
         theCopy.text = self.text
         theCopy.backgroundImage = self.backgroundImage
-        theCopy.faceImage = self.faceImage
+        theCopy.faceImage = Array<String>(self.faceImage)
         theCopy.shirtText = self.shirtText
         
         return theCopy
@@ -73,14 +73,16 @@ class EntryManager: NSObject {
                 newEntry.backgroundImage = backgroundUrl
             }
                 
-            if let faceUrl = json["entities"]["people_eng"][0]["additional_information"]["image"].string {
-                newEntry.faceImage = faceUrl
+                
+            if let faces = json["entities"]["people_eng"].array {
+                for (var i = 0; i<faces.count; i++) {
+                    newEntry.faceImage.append(faces[i]["additional_information"]["image"].string!)
+                }
             }
                 
             if let company = json["entities"]["companies_eng"][0]["normalized_text"].string {
                 newEntry.shirtText = company
             }
-                
             self.entriesArray.append(newEntry.copy() as! Entry)
             completion(result: newEntry)
 

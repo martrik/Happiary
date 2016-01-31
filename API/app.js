@@ -5,6 +5,13 @@ var client = new havenondemand.HODClient("85978353-ebbf-48b9-88dc-3bf559875535")
 var bodyParser = require("body-parser")
 var urlencoded = bodyParser.urlencoded({extended: false})
 
+/*var GoogleSearch = require('google-search');
+var googleSearch = new GoogleSearch({
+  key: 'AIzaSyADvg0ATY60L3nCzl9ZiQ1iDbSil_BQ6lo',
+  cx: '014381433361802399898:issphtvgno4'
+});*/
+
+
 // Send diary text and get response
 app.post("/entry", urlencoded, function(req, res){
 	// Object that will be sent to the client
@@ -30,7 +37,7 @@ app.post("/entry", urlencoded, function(req, res){
 							response["sentiment"] = resp2.body.aggregate.sentiment
 						}
 
-						// Entitites to search for
+						// Entities to search for
 						var entitiesParams = ["people_eng", "places_eng", "companies_eng", "organizations", "universities"]
 						textDic["entity_type"] = entitiesParams
 
@@ -40,13 +47,14 @@ app.post("/entry", urlencoded, function(req, res){
 								var parsedEntities = parseEntities(resp3.body.entities)
 								response["entities"] = parsedEntities 
 
+								res.status(200).send(response)									
+								/*
 								// If some entities are people
 								if (parsedEntities["people_eng"]) {
-									getFacesInfo(parsedEntities["people_eng"], function(facesInfo){
-										response["facesInfo"] = facesInfo
-										res.status(200).send(response)									
-									})
-								} else res.status(200).send(response)
+									//getFacesInfo(parsedEntities["people_eng"], function(facesInfo){
+									//	response["facesInfo"] = facesInfo
+									//})
+								} else res.status(200).send(response)*/
 								
 							} else {
 								console.error("Error: " + err2)	

@@ -12,11 +12,18 @@ import EZLoadingActivity
 class SaveEntryViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var entryTextView: UITextView!
+    @IBOutlet weak var dateLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.automaticallyAdjustsScrollViewInsets = false
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .MediumStyle
+        let string = dateFormatter.stringFromDate(NSDate())
+        
+        self.dateLabel.text = "Date: " + string
         
         self.entryTextView.delegate = self
         self.entryTextView.text = "How do you feel today?"
@@ -27,14 +34,22 @@ class SaveEntryViewController: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func didTapSave(sender: AnyObject) {
-        EZLoadingActivity.Settings.ActivityColor = UIColor.orangeColor()
-        EZLoadingActivity.show("Analysing...", disableUI: false)
-
-        EntryManager.sharedInstance.saveEntry(self.entryTextView.text, date: NSDate(timeIntervalSince1970: 60)) {
-            (completion: Entry) in
+        if (self.entryTextView.text == "How do you feel today?") {
+            JSSAlertView().warning(
+                self,
+                title: "Hey! You need to add some text."
+            )
+        } else {
+            EZLoadingActivity.Settings.ActivityColor = UIColor.orangeColor()
+            EZLoadingActivity.show("Analysing...", disableUI: false)
+            
+            EntryManager.sharedInstance.saveEntry(self.entryTextView.text, date: NSDate(timeIntervalSince1970: 60)) {
+                (completion: Entry) in
                 EZLoadingActivity.hide(success: true, animated: false)
                 self.navigationController!.popViewControllerAnimated(true)
+            }
         }
+
     }
     
     func textViewDidBeginEditing(textView: UITextView) {

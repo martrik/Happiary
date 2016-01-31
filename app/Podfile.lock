@@ -1,10 +1,14 @@
 PODS:
   - Alamofire (3.1.5)
+  - Auk (2.0.19):
+    - moa (~> 2.0)
   - EZLoadingActivity (0.8)
+  - moa (2.1.7)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
+  - Auk (~> 2.0)
   - EZLoadingActivity
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
@@ -19,9 +23,11 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  Auk: 28b2f2372b8482d4bd1f1188c3638ef72a021dea
   EZLoadingActivity: 6fd75a05765a4085f4b6fef6f62edf9f144b3139
+  moa: bf5704e649973fdefbcebe7bfa1aa21cdd3292b4
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 12dbb733cf16938f0e9a6c10036b32293f359349
+PODFILE CHECKSUM: 5a59a1337a6c92d84c4f3eb41b3cb9629fe1d31c
 
 COCOAPODS: 1.0.0.beta.2

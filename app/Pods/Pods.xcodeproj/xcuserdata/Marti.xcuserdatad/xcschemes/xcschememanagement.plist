@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Auk.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>EZLoadingActivity.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,10 +34,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>moa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>147B36BF6543C801790EB2FE3294E664</key>
+		<key>2C9F8188802DB4395B862D4E5BC72FD3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D55A6F1D50F4644B89DA1884F4C8D46</key>
+		<key>6D1A7B0DA0E830E2C4BA26E14A7B4F56</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +63,16 @@
 			<true/>
 		</dict>
 		<key>903A108934E1A089B76F443DC34C8E54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>96156A5F1AD1FBE6AB7AD495CD1FB54F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B2C42640213545ED2F04028AD80318B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

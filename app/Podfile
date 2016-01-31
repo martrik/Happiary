@@ -7,6 +7,9 @@ target 'happiary' do
 pod 'Alamofire', '~> 3.0'
 pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 pod 'EZLoadingActivity'
+pod 'Auk', '~> 2.0'
+
+
 
 end
 

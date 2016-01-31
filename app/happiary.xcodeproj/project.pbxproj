@@ -17,6 +17,8 @@
 		41A6E6AF1C5D856D00A5D8D5 /* EntryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6E6AE1C5D856D00A5D8D5 /* EntryManager.swift */; };
 		41BA16201C5D9F8300A976AE /* JSSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA161F1C5D9F8300A976AE /* JSSAlertView.swift */; };
 		41BA16221C5DA70200A976AE /* ViewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA16211C5DA70200A976AE /* ViewEntryViewController.swift */; };
+		41BA162C1C5E1D3600A976AE /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA162B1C5E1D3600A976AE /* LineChart.swift */; };
+		41BA162E1C5E1E0E00A976AE /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41BA162D1C5E1E0E00A976AE /* logo.jpg */; };
 		43F506B55F3EA4F314108552 /* Pods_happiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF271FAFF4DC535C14E6349B /* Pods_happiary.framework */; };
 		ADBBC3EBD28EC10D0DA9CD37 /* Pods_happiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CAB0F7D76B124F24127440 /* Pods_happiaryTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,9 @@
 		41A6E6AE1C5D856D00A5D8D5 /* EntryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryManager.swift; sourceTree = "<group>"; };
 		41BA161F1C5D9F8300A976AE /* JSSAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSAlertView.swift; sourceTree = "<group>"; };
 		41BA16211C5DA70200A976AE /* ViewEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewEntryViewController.swift; sourceTree = "<group>"; };
+		41BA16231C5DD52000A976AE /* Happiary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Happiary-Bridging-Header.h"; sourceTree = "<group>"; };
+		41BA162B1C5E1D3600A976AE /* LineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		41BA162D1C5E1E0E00A976AE /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 		A0AACCC8E1DC8AA75EE59F36 /* Pods-happiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiaryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-happiaryTests/Pods-happiaryTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5BA5FD7AF57AB2FC204C49D /* Pods-happiaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiaryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-happiaryTests/Pods-happiaryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF6475BE64439B91FB386AB7 /* Pods-happiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-happiary/Pods-happiary.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +132,7 @@
 		0B975C911C5D23A700899617 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41BA162D1C5E1E0E00A976AE /* logo.jpg */,
 				0B975C921C5D23A700899617 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -173,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				41BA161F1C5D9F8300A976AE /* JSSAlertView.swift */,
+				41BA162B1C5E1D3600A976AE /* LineChart.swift */,
+				41BA16231C5DD52000A976AE /* Happiary-Bridging-Header.h */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -276,6 +284,7 @@
 				0B975C991C5D23A700899617 /* Main.storyboard in Resources */,
 				0B975C9E1C5D23A700899617 /* LaunchScreen.xib in Resources */,
 				0B975C9B1C5D23A700899617 /* Images.xcassets in Resources */,
+				41BA162E1C5E1E0E00A976AE /* logo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +399,7 @@
 				0B975C961C5D23A700899617 /* MainViewController.swift in Sources */,
 				0B975C941C5D23A700899617 /* AppDelegate.swift in Sources */,
 				41BA16201C5D9F8300A976AE /* JSSAlertView.swift in Sources */,
+				41BA162C1C5E1D3600A976AE /* LineChart.swift in Sources */,
 				41A6E6AF1C5D856D00A5D8D5 /* EntryManager.swift in Sources */,
 				0B975CB41C5D24A600899617 /* SaveEntryViewController.swift in Sources */,
 			);
