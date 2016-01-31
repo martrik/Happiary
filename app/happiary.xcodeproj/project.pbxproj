@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0B975C941C5D23A700899617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B975C931C5D23A700899617 /* AppDelegate.swift */; };
-		0B975C961C5D23A700899617 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B975C951C5D23A700899617 /* ViewController.swift */; };
+		0B975C961C5D23A700899617 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B975C951C5D23A700899617 /* MainViewController.swift */; };
 		0B975C991C5D23A700899617 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B975C971C5D23A700899617 /* Main.storyboard */; };
 		0B975C9B1C5D23A700899617 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B975C9A1C5D23A700899617 /* Images.xcassets */; };
 		0B975C9E1C5D23A700899617 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B975C9C1C5D23A700899617 /* LaunchScreen.xib */; };
 		0B975CAA1C5D23A700899617 /* happiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B975CA91C5D23A700899617 /* happiaryTests.swift */; };
-		0B975CB41C5D24A600899617 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B975CB31C5D24A600899617 /* EntryViewController.swift */; };
-		0B975CB61C5D666400899617 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B975CB51C5D666400899617 /* logo.png */; };
-		0B975CB81C5D66DC00899617 /* real logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B975CB71C5D66DC00899617 /* real logo.png */; };
-		0B975CBA1C5D67B300899617 /* logo_beltoul.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B975CB91C5D67B300899617 /* logo_beltoul.png */; };
+		0B975CB41C5D24A600899617 /* SaveEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B975CB31C5D24A600899617 /* SaveEntryViewController.swift */; };
+		41A6E6AF1C5D856D00A5D8D5 /* EntryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6E6AE1C5D856D00A5D8D5 /* EntryManager.swift */; };
+		41BA16201C5D9F8300A976AE /* JSSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA161F1C5D9F8300A976AE /* JSSAlertView.swift */; };
+		41BA16221C5DA70200A976AE /* ViewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA16211C5DA70200A976AE /* ViewEntryViewController.swift */; };
+		43F506B55F3EA4F314108552 /* Pods_happiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF271FAFF4DC535C14E6349B /* Pods_happiary.framework */; };
+		ADBBC3EBD28EC10D0DA9CD37 /* Pods_happiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CAB0F7D76B124F24127440 /* Pods_happiaryTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,21 +31,40 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		41A6E6CC1C5D87C000A5D8D5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0B975C8E1C5D23A700899617 /* happiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B975C921C5D23A700899617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B975C931C5D23A700899617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B975C951C5D23A700899617 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B975C951C5D23A700899617 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0B975C981C5D23A700899617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B975C9A1C5D23A700899617 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0B975C9D1C5D23A700899617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0B975CA31C5D23A700899617 /* happiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = happiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B975CA81C5D23A700899617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B975CA91C5D23A700899617 /* happiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = happiaryTests.swift; sourceTree = "<group>"; };
-		0B975CB31C5D24A600899617 /* EntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
-		0B975CB51C5D666400899617 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../logo.png; sourceTree = "<group>"; };
-		0B975CB71C5D66DC00899617 /* real logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "real logo.png"; path = "../../../real logo.png"; sourceTree = "<group>"; };
-		0B975CB91C5D67B300899617 /* logo_beltoul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_beltoul.png; path = ../../../logo_beltoul.png; sourceTree = "<group>"; };
+		0B975CB31C5D24A600899617 /* SaveEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryViewController.swift; sourceTree = "<group>"; };
+		41A6E6AE1C5D856D00A5D8D5 /* EntryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryManager.swift; sourceTree = "<group>"; };
+		41BA161F1C5D9F8300A976AE /* JSSAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSAlertView.swift; sourceTree = "<group>"; };
+		41BA16211C5DA70200A976AE /* ViewEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewEntryViewController.swift; sourceTree = "<group>"; };
+		A0AACCC8E1DC8AA75EE59F36 /* Pods-happiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiaryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-happiaryTests/Pods-happiaryTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5BA5FD7AF57AB2FC204C49D /* Pods-happiaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiaryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-happiaryTests/Pods-happiaryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF6475BE64439B91FB386AB7 /* Pods-happiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-happiary/Pods-happiary.debug.xcconfig"; sourceTree = "<group>"; };
+		B0CAB0F7D76B124F24127440 /* Pods_happiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_happiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF271FAFF4DC535C14E6349B /* Pods_happiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_happiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDABE54F34187948E53BA1DD /* Pods-happiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-happiary/Pods-happiary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43F506B55F3EA4F314108552 /* Pods_happiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBBC3EBD28EC10D0DA9CD37 /* Pods_happiaryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +93,8 @@
 				0B975C901C5D23A700899617 /* happiary */,
 				0B975CA61C5D23A700899617 /* happiaryTests */,
 				0B975C8F1C5D23A700899617 /* Products */,
+				41A6E6A41C5D817700A5D8D5 /* Frameworks */,
+				3B3BF5787D2E970D6918FCFB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,9 +110,12 @@
 		0B975C901C5D23A700899617 /* happiary */ = {
 			isa = PBXGroup;
 			children = (
+				41BA161E1C5D9F4700A976AE /* Managers */,
 				0B975C931C5D23A700899617 /* AppDelegate.swift */,
-				0B975C951C5D23A700899617 /* ViewController.swift */,
-				0B975CB31C5D24A600899617 /* EntryViewController.swift */,
+				0B975C951C5D23A700899617 /* MainViewController.swift */,
+				0B975CB31C5D24A600899617 /* SaveEntryViewController.swift */,
+				41BA16211C5DA70200A976AE /* ViewEntryViewController.swift */,
+				41BA161D1C5D9F3E00A976AE /* CustomViews */,
 				0B975C971C5D23A700899617 /* Main.storyboard */,
 				0B975C9A1C5D23A700899617 /* Images.xcassets */,
 				0B975C9C1C5D23A700899617 /* LaunchScreen.xib */,
@@ -100,9 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				0B975C921C5D23A700899617 /* Info.plist */,
-				0B975CB71C5D66DC00899617 /* real logo.png */,
-				0B975CB91C5D67B300899617 /* logo_beltoul.png */,
-				0B975CB51C5D666400899617 /* logo.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -124,6 +149,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3B3BF5787D2E970D6918FCFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF6475BE64439B91FB386AB7 /* Pods-happiary.debug.xcconfig */,
+				FDABE54F34187948E53BA1DD /* Pods-happiary.release.xcconfig */,
+				A5BA5FD7AF57AB2FC204C49D /* Pods-happiaryTests.debug.xcconfig */,
+				A0AACCC8E1DC8AA75EE59F36 /* Pods-happiaryTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		41A6E6A41C5D817700A5D8D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF271FAFF4DC535C14E6349B /* Pods_happiary.framework */,
+				B0CAB0F7D76B124F24127440 /* Pods_happiaryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41BA161D1C5D9F3E00A976AE /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				41BA161F1C5D9F8300A976AE /* JSSAlertView.swift */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		41BA161E1C5D9F4700A976AE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				41A6E6AE1C5D856D00A5D8D5 /* EntryManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +192,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B975CAD1C5D23A700899617 /* Build configuration list for PBXNativeTarget "happiary" */;
 			buildPhases = (
+				05E1F06C31F32D69BBB12FE6 /* Check Pods Manifest.lock */,
 				0B975C8A1C5D23A700899617 /* Sources */,
 				0B975C8B1C5D23A700899617 /* Frameworks */,
 				0B975C8C1C5D23A700899617 /* Resources */,
+				41A6E6CC1C5D87C000A5D8D5 /* Embed Frameworks */,
+				5A0E8D1E361D92B8AE3D9DD8 /* Embed Pods Frameworks */,
+				8DF30665A952996175A1D72A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B975CB01C5D23A700899617 /* Build configuration list for PBXNativeTarget "happiaryTests" */;
 			buildPhases = (
+				FB95F6F83E7426CC5077A10A /* Check Pods Manifest.lock */,
 				0B975C9F1C5D23A700899617 /* Sources */,
 				0B975CA01C5D23A700899617 /* Frameworks */,
 				0B975CA11C5D23A700899617 /* Resources */,
+				33D3B2F9ACAF032C889968EC /* Embed Pods Frameworks */,
+				049E3996DA5858C34C1E7C7F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,7 +236,8 @@
 		0B975C861C5D23A700899617 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Sadir;
 				TargetAttributes = {
 					0B975C8D1C5D23A700899617 = {
@@ -204,10 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B975CBA1C5D67B300899617 /* logo_beltoul.png in Resources */,
 				0B975C991C5D23A700899617 /* Main.storyboard in Resources */,
-				0B975CB81C5D66DC00899617 /* real logo.png in Resources */,
-				0B975CB61C5D666400899617 /* logo.png in Resources */,
 				0B975C9E1C5D23A700899617 /* LaunchScreen.xib in Resources */,
 				0B975C9B1C5D23A700899617 /* Images.xcassets in Resources */,
 			);
@@ -222,14 +288,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		049E3996DA5858C34C1E7C7F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-happiaryTests/Pods-happiaryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		05E1F06C31F32D69BBB12FE6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		33D3B2F9ACAF032C889968EC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-happiaryTests/Pods-happiaryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A0E8D1E361D92B8AE3D9DD8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-happiary/Pods-happiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DF30665A952996175A1D72A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-happiary/Pods-happiary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB95F6F83E7426CC5077A10A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0B975C8A1C5D23A700899617 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B975C961C5D23A700899617 /* ViewController.swift in Sources */,
+				41BA16221C5DA70200A976AE /* ViewEntryViewController.swift in Sources */,
+				0B975C961C5D23A700899617 /* MainViewController.swift in Sources */,
 				0B975C941C5D23A700899617 /* AppDelegate.swift in Sources */,
-				0B975CB41C5D24A600899617 /* EntryViewController.swift in Sources */,
+				41BA16201C5D9F8300A976AE /* JSSAlertView.swift in Sources */,
+				41A6E6AF1C5D856D00A5D8D5 /* EntryManager.swift in Sources */,
+				0B975CB41C5D24A600899617 /* SaveEntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +454,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -356,26 +519,43 @@
 		};
 		0B975CAE1C5D23A700899617 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF6475BE64439B91FB386AB7 /* Pods-happiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = happiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sadir.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		0B975CAF1C5D23A700899617 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDABE54F34187948E53BA1DD /* Pods-happiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = happiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sadir.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		0B975CB11C5D23A700899617 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5BA5FD7AF57AB2FC204C49D /* Pods-happiaryTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -388,6 +568,7 @@
 				);
 				INFOPLIST_FILE = happiaryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sadir.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/happiary.app/happiary";
 			};
@@ -395,6 +576,7 @@
 		};
 		0B975CB21C5D23A700899617 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0AACCC8E1DC8AA75EE59F36 /* Pods-happiaryTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -403,6 +585,7 @@
 				);
 				INFOPLIST_FILE = happiaryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sadir.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/happiary.app/happiary";
 			};

@@ -38,7 +38,7 @@ app.post("/entry", urlencoded, function(req, res){
 						client.call("extractentities", textDic, function(err3, resp3, body3){
 							if (!err3) {
 								var parsedEntities = parseEntities(resp3.body.entities)
-								response["entitites"] = parsedEntities 
+								response["entities"] = parsedEntities 
 
 								// If some entities are people
 								if (parsedEntities["people_eng"]) {
